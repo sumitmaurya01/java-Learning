@@ -24,3 +24,10 @@ package ExceptionHandling;
         System.out.println("Hello...");
     }
 }
+/*
+if there is finally just after the try block (not catch)and any exception occurs then
+after try the only finally block will be executed and then terminate the code
+if there is not exception then program will run freely
+ . if there's catch block after the try then only the lines / code after the
+ finally will be executed even after the exception occurs
+ */
