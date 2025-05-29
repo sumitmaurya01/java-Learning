@@ -1,6 +1,11 @@
 package ExceptionHandling;
 import java.io.File;
 import java.io.*;
+/***
+ * in throws first we make a method which could throw exception
+ * and then if we use that method then it will remind us to handle
+ * that exception through catch
+ **/
 public class UsingThrows{
     static class ReadAndWrite {
         public void readFile() throws FileNotFoundException {
