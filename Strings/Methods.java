@@ -54,7 +54,36 @@ public class Methods {
         System.out.println("replace all-> "+str.replaceAll("is","WAS"));//replace all without regex
         System.out.println("replace all -> "+str.replaceAll("is(.)","WAS"));//replace all with regex
         System.out.println("Replace all -> "+str.replaceAll("is(.*)","WAS"));//replace all with regex
+        System.out.println("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
+        System.out.println("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
+        System.out.println("--- STRING SEARCHING METHODS ---");
+        str ="Deepak";
+        System.out.println(str.indexOf('e'));//1
+        System.out.println(str.indexOf("ak"));//4
+        System.out.println(str.lastIndexOf('e'));//2
+        System.out.println(str.contains("ep"));//true
+        System.out.println(str.startsWith("ep"));//false , checks prefix
+        System.out.println(str.endsWith("ak"));//true , checks suffix
 
 
+        System.out.println("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
+        System.out.println("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
+        System.out.println("--- STRING TYPECASE AND CASE CONVERSIONG METHODS");
+         // case Conversion
+        str="sumit";
+        str1="MaUryA";
+        System.out.println(str.toUpperCase());
+        System.out.println(str1.toLowerCase());
+
+        // type conversion
+        int a = 10;
+        String s = String.valueOf(a);
+        System.out.println(s);
+        System.out.println(s+51);
+        str="hello";
+        char[] c= str.toCharArray();
+        //System.out.println(str[0]); // error bcz we can't access that directly its different from cpp
+        // we can do str.charAt(0);
+        System.out.println(c[0]);
     }
 }
