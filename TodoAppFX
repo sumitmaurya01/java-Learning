@@ -1,0 +1,73 @@
+//import javafx.application.Application;
+//import javafx.scene.Scene;
+//import javafx.scene.control.*;
+//import javafx.scene.layout.*;
+//import javafx.stage.Stage;
+//import javafx.geometry.Insets;
+//
+//public class TodoAppFX extends Application {
+//
+//    @Override
+//    public void start(Stage primaryStage) {
+//        primaryStage.setTitle("To-Do List App 📝");
+//
+//        // Input field and button
+//        TextField taskInput = new TextField();
+//        taskInput.setPromptText("Enter a new task");
+//        Button addButton = new Button("Add Task");
+//
+//        // Task list
+//        ListView<String> taskList = new ListView<>();
+//        Button removeButton = new Button("Remove Selected");
+//
+//        // Top input layout
+//        HBox inputBox = new HBox(10, taskInput, addButton);
+//        inputBox.setPadding(new Insets(10));
+//
+//        // Bottom button layout
+//        HBox bottomBox = new HBox(removeButton);
+//        bottomBox.setPadding(new Insets(10));
+//
+//        // Main layout
+//        VBox layout = new VBox(10, inputBox, taskList, bottomBox);
+//        layout.setPadding(new Insets(10));
+//
+//        // Add Task Event
+//        addButton.setOnAction(e -> {
+//            String task = taskInput.getText().trim();
+//            if (!task.isEmpty()) {
+//                taskList.getItems().add(task);
+//                taskInput.clear();
+//            } else {
+//                showAlert("Task cannot be empty!");
+//            }
+//        });
+//
+//        // Remove Task Event
+//        removeButton.setOnAction(e -> {
+//            String selected = taskList.getSelectionModel().getSelectedItem();
+//            if (selected != null) {
+//                taskList.getItems().remove(selected);
+//            } else {
+//                showAlert("No task selected!");
+//            }
+//        });
+//
+//        // Set Scene
+//        Scene scene = new Scene(layout, 400, 400);
+//        primaryStage.setScene(scene);
+//        primaryStage.show();
+//    }
+//
+//    // Show alert method
+//    private void showAlert(String message) {
+//        Alert alert = new Alert(Alert.AlertType.WARNING);
+//        alert.setHeaderText(null);
+//        alert.setContentText(message);
+//        alert.showAndWait();
+//    }
+//
+//    public static void main(String[] args) {
+//        launch(args); // starts JavaFX application
+//    }
+//}
